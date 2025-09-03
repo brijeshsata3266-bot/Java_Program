@@ -1,0 +1,23 @@
+//5.Write a java program to get different values from user at run time using Scanner.
+
+import java.util.*;
+
+public class Scanner_Class
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Your Enrollment No:=");
+		int eno=sc.nextInt();
+		System.out.println("Enter Your Name:=");
+		String name=sc.next();
+		System.out.println("Enter Your Fees:=");
+		
+		double fee=sc.nextDouble();
+		
+		System.out.println("Enrollment:"+eno);
+		System.out.println("Name:="+name);
+		System.out.println("Fees="+fee);
+	}
+}
