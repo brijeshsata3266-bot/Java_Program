@@ -1,0 +1,24 @@
+//7.Write a java program to use IF Condition
+import java.util.*;
+public class If_Conditon
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Enter Your Age:=");
+		int age =sc.nextInt();
+		
+		
+		if(age>=18 && age<=100)
+		{
+			System.out.println("Eligible For Vote.."+age);
+		}
+		else
+		{
+			System.out.println("Not Eligible For Vote.."+age);
+		}
+			
+	}
+}
