@@ -1,0 +1,34 @@
+//11.Write a java program to use Interface in java
+
+interface Animal
+{
+	void animalSound();
+	void sleep();
+}
+
+class Lion implements Animal
+{
+	public 	void animalSound()
+		{
+			System.out.println("Roar");
+		}
+	public 	void sleep()
+		{
+			System.out.println("zzz");
+		}
+}
+
+
+class Interface
+{
+			public static void main(String args[])
+			{
+				Lion l=new Lion();
+				l.animalSound();
+				l.sleep();
+	
+			}
+
+	
+}
+
