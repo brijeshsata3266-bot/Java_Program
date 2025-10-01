@@ -1,0 +1,38 @@
+//12.Write a java program to extend one interface into another interface.
+
+interface Vehical
+{
+	void start();
+	void stop();
+}
+interface Car extends Vehical
+{
+	void honk();
+}
+
+class Sedan implements Car
+{
+	public void start()
+	{
+		System.out.println("Sedan is Starting..");
+	}
+	public void stop()
+	{
+		System.out.println("Sedan is Stoping..");
+	}
+	public void honk()
+	{
+		System.out.println("Sedan Horn is Honking");
+	}
+}
+
+public class Prg12_Interface
+{
+	public static void main(String[] args)
+	{
+		Sedan s = new Sedan();
+		s.start();
+		s.stop();
+		s.honk();
+	}
+}
