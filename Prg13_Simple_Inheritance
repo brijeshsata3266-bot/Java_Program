@@ -1,0 +1,27 @@
+//13.Write a java program to perform simple inheritance.
+
+class Animal
+{
+	void eat()
+	{
+		System.out.println(" Eating..");
+	}
+}
+
+class Dog extends Animal
+{
+	void brak()
+	{
+		System.out.println(" Braking..");
+	}
+}
+
+public class Prg13_SimpleInheritance
+{
+	public static void main(String[] args)
+	{
+		Dog d = new Dog();
+		d.eat();
+		d.brak();
+	}
+} 
