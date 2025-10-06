@@ -1,0 +1,33 @@
+//18.Writea java program to use Multiple inheritance using interface.
+
+interface Animal
+{
+	void eat();
+}
+
+interface maamal
+{
+	void sound();
+}
+
+class Dog implements Animal,maamal
+{
+	public void sound()
+	{
+		System.out.println("Braking...");
+	}
+	public void eat()
+	{
+		System.out.println("Eating..");
+	}
+}
+class Prg18_Multiple_Inteface
+{
+	public static void main(String[] args)
+	{
+		Dog d = new Dog();
+		d.eat();
+		d.sound();
+		
+	}
+}
