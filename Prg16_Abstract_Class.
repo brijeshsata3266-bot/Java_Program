@@ -1,0 +1,29 @@
+//16.Write a java program to use Abstract class
+
+abstract class Animal
+{
+	abstract void sound();
+	
+	void eat()
+	{
+		System.out.println("Eating..");
+	}
+}
+
+class Dog extends Animal
+{
+	void sound()
+	{
+		System.out.println("Braking..");
+	}
+}
+
+class Prg16_Abstract_Class
+{
+	public static void main(String[] args)
+	{
+		Dog d = new Dog();
+		d.eat();
+		d.sound();
+	}	
+}
