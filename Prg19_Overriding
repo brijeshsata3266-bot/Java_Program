@@ -1,0 +1,29 @@
+//19.Write a java program to use method overriding
+
+class Animal
+{
+	void Sound()
+	{
+		System.out.println("Animal makes Sound..");
+	}
+}
+
+class Dog extends Animal
+{
+	void Sound()
+	{
+		System.out.println("Braking..");
+	}
+}
+
+class Prg19_Overriding
+{
+	public static void main(String[] args)
+	{
+		Animal a = new Animal();
+		Dog d = new Dog();
+		
+		a.Sound();
+		d.Sound();
+	}
+}
